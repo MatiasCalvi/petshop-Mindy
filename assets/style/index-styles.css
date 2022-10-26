@@ -5,7 +5,7 @@
     align-items: center;
 }
 .main-index-gaston{
-    background-image: url(img/dog-looking-suprised.png);
+    background-image: url(../img/dog-looking-suprised.png);
 }
 .index-main-area {
   height: 90vh;
@@ -36,7 +36,7 @@
     height: 40vh;
     background-image: linear-gradient(0deg,
     rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)), url("img/bulldog-ingles-perro-pura-sangre-sobre-fondo-amarillo-copiar-espacio_666637-199.jpg");
+    rgba(0, 0, 0, 0.6)), url("../img/bulldog-ingles-perro-pura-sangre-sobre-fondo-amarillo-copiar-espacio_666637-199.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
