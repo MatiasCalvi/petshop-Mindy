@@ -1,12 +1,12 @@
 .body-contact {
   background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
-  font-size: 12px;
+/*   font-size: 12px; */
 }
 
 .body-contact,
 button,
 input {
-  font-family: 'Montserrat', sans-serif;
+/*   font-family: 'Montserrat', sans-serif; */
   font-weight: 700;
   letter-spacing: 1.4px;
 }
