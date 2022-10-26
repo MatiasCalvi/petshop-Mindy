@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.mainFR{
+    background-color: #FFA500!important;
+    min-height: 100vh;
+}
+
+
+
+.removeFR{
+    padding-top: 10rem;
+}
+
+
+
+.finalizarCompraFR{
+    width: 80rem;
+    padding-top: 15px;
+}
+
+.cardFR{
+    padding-top: 10px;
+    min-height: 10vh;
+    width: 50rem;
+
+}
