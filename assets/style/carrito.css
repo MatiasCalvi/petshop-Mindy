@@ -4,10 +4,17 @@
     box-sizing: border-box;
 
 }
-
+.body-carrito {
+    background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+  
 
 .mainFR{
-    background-color: #FFA500!important;
+    
     min-height: 100vh;
 }
 
@@ -30,3 +37,74 @@
     width: 50rem;
 
 }
+
+
+.pie-pagina {
+    width: 100%;
+  
+  
+  
+  }
+  
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+  }
+  
+  .pie-pagina .grupo-1 .box h2 {
+    color: rgb(231, 231, 231);
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  .pie-pagina .grupo-1 .box p {
+    color: rgb(231, 231, 231);
+    margin-bottom: 10px;
+  }
+  
+  .pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: #e4e4e4;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+  }
+  
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: #dfa725;
+  }
+  
+  .pie-pagina .grupo-2 {
+  
+    border-top: 1px solid rgba(230, 230, 230, 0.392);
+    padding: 15px 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.463);
+  }
+  
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
