@@ -249,6 +249,10 @@ input {
   color: #dfa725;
 }
 
+.text-orange {
+  color: #f28f16 !important;
+}
+
 .pie-pagina .grupo-2 {
 
   border-top: 1px solid rgba(230, 230, 230, 0.392);

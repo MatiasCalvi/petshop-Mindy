@@ -33,6 +33,10 @@ video {
 
 }
 
+.text-orange {
+  color: #f28f16;
+}
+
 .option {
   border-radius: 15px;
   padding: 0 30px 0 10px;
