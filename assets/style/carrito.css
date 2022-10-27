@@ -6,44 +6,26 @@
 }
 .body-carrito {
     background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
 }
   
 
 .mainFR{
-    
-    min-height: 100vh;
+    height: 90vh;
 }
 
-
-
-.removeFR{
-    padding-top: 10rem;
+.text-orange {
+  color:#f28f16 !important;
 }
 
-
-
-.finalizarCompraFR{
-    width: 80rem;
-    padding-top: 15px;
+.navbar {
+  height: 10%;
 }
 
-.cardFR{
-    padding-top: 10px;
-    min-height: 10vh;
-    width: 50rem;
-
-}
 
 
 .pie-pagina {
     width: 100%;
-  
-  
-  
+    height: 100%;
   }
   
   .pie-pagina .grupo-1 {
