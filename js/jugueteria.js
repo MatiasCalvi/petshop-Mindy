@@ -65,7 +65,12 @@ function htmlCartaPocoStock(array) {
              alt="huellita"
            />
          </button>
-         <a href=""><button class="movile-button">More info</button></a>
+         <a href=""><button class="movile-button"><img
+         class="btn-comprar-img"
+         src="../assets/img/carritoBtn.png"
+         height="30px"
+         alt="huellita"
+       /></button></a>
        </div>
      </div> 
      `;
