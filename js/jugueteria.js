@@ -7,11 +7,7 @@ let aplicado = {};
 function htmlCarta(array) {
   contenedorCards.innerHTML += `
      <div class="card" style="width: 16rem" data-aos="fade-up">
-        <img
-          src="${array.imagen}"
-          class="card-img-top images"
-          alt="${array.nombre}"
-        />
+        <img src="${array.imagen}" class="card-img-top images" alt="${array.nombre}"/>
         <div class="category-div">
           <span class="tag tag-teal">${array.tipo}</span>
         </div>
@@ -21,15 +17,15 @@ function htmlCarta(array) {
           <p class="card-text">
             ${array.descripcion}
           </p>
-          <button class="btn-comprar card-button">
+          <a href="./carrito.html"><button class="btn-comprar card-button">
             <img
               class="btn-comprar-img"
               src="../assets/img/carritoBtn.png"
               height="30px"
               alt="huellita"
             />
-          </button>
-          <a href=""><button class="movile-button">   <img
+          </button></a>
+          <a href="./carrito.html"><button class="movile-button">   <img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -43,29 +39,30 @@ function htmlCarta(array) {
 function htmlCartaPocoStock(array) {
   contenedorCards.innerHTML += `
     <div class="card" style="width: 16rem" data-aos="fade-up">
-       <img
-         src="${array.imagen}"
-         class="card-img-top images"
-         alt="${array.nombre}"
-       />
+       <img src="${array.imagen}" class="card-img-top images" alt="${array.nombre}"/>
        <div class="category-div">
          <span class="tag tag-teal">${array.tipo}</span>
        </div>
        <div class="card-body">
          <h5 class="titlee shop-item-title">${array.nombre}</h5>
          <p>Price: ${array.precio}</p>
-         <p class="card-text">
-           POCO STOCK
+         <p class="card-description"> ${array.descripcion}</p>
+         <p class="card-text" style='color:red; font-size:1.1rem;'>
+           ! Ultimas Unidades !
          </p>
+<<<<<<< HEAD
          <button id="${array._id}" onClick="agregarProducto('${array._id}') class="btn-comprar card-button">
+=======
+         <a href="./carrito.html"><button class="btn-comprar card-button">
+>>>>>>> 7c77dc6901afce8abf7f71401ac56fbb614a04b3
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
              height="30px"
              alt="huellita"
            />
-         </button>
-         <a href=""><button class="movile-button"><img
+         </button></a>
+         <a href="./carrito.html"><button class="movile-button"><img
          class="btn-comprar-img"
          src="../assets/img/carritoBtn.png"
          height="30px"
