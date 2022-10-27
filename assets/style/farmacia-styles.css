@@ -254,7 +254,6 @@ input:not(:placeholder-shown)~.reset {
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   padding: 25px;
   min-height: 250px;
@@ -446,5 +445,9 @@ input:not(:placeholder-shown)~.reset {
     padding: 10px;
     border-radius: 20px;
     width: 17rem;
+  }
+
+  .titlee{
+    text-align: center;
   }
 
