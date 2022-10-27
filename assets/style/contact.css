@@ -339,7 +339,7 @@ margin-bottom: 10px;
   justify-content: center;
 }
 .nav-link:hover{
-  color: white;
+  color: white !important;
 }
 
 .active {
