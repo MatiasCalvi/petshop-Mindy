@@ -17,7 +17,7 @@ function htmlCarta(array) {
           <p class="card-text">
             ${array.descripcion}
           </p>
-          <a href="./carrito.html"><button class="btn-comprar card-button">
+          <a href="./carrito.html"><button class="btn-comprar card-button" >
             <img
               class="btn-comprar-img"
               src="../assets/img/carritoBtn.png"
@@ -25,7 +25,7 @@ function htmlCarta(array) {
               alt="huellita"
             />
           </button></a>
-          <a href="./carrito.html"><button class="movile-button">   <img
+          <a href="./carrito.html"><button class="movile-button"><img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -50,11 +50,7 @@ function htmlCartaPocoStock(array) {
          <p class="card-text" style='color:red; font-size:1.1rem;'>
            ! Ultimas Unidades !
          </p>
-<<<<<<< HEAD
-         <button id="${array._id}" onClick="agregarProducto('${array._id}') class="btn-comprar card-button">
-=======
          <a href="./carrito.html"><button class="btn-comprar card-button">
->>>>>>> 7c77dc6901afce8abf7f71401ac56fbb614a04b3
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
