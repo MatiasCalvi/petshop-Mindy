@@ -25,7 +25,7 @@ function htmlCarta(array) {
               alt="huellita"
             />
           </button></a>
-          <a href="./carrito.html"><button class="movile-button">   <img
+          <a href="./carrito.html"><button class="movile-button"><img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -58,8 +58,8 @@ function htmlCartaPocoStock(array) {
              height="30px"
              alt="huellita"
            />
-         </button></a>
-         <a href="./carrito.html"><button class="movile-button"><img
+         </button>
+         <a href=""><button class="movile-button"><img
          class="btn-comprar-img"
          src="../assets/img/carritoBtn.png"
          height="30px"
@@ -148,5 +148,24 @@ async function capturar() {
   }
 }
 capturar();
+/* 
+  let addToCartButtons = document.getElementsByClassName('btn-comprar')
+  for (let i = 0; i < addToCartButtons.length; i++) {
+    let button = addToCartButtons[i]
+    button.addEventListener('click', addToCartClicked)
+  }
+
+  function addToCartClicked(event) {
+    let button = event.target
+    let shopItem = button.parentElement.parentElement
+    let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    console.log(title)
+  }
 
 
+  console.log(juguetes) */
+
+
+  const clickButton = document.getElementsByClassName('btn-comprar').forEach((x)=>{
+    x.addEventListener('click', console.log('se apreto porfa dime'))
+  })
