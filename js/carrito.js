@@ -51,3 +51,4 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
+console.log(contenedorCards)
