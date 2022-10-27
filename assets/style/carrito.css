@@ -1,110 +1,139 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 .body-carrito {
-    background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+  background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+letter-spacing: 1.4px;
 }
-  
+
 
 .mainFR{
-    
-    min-height: 100vh;
+  
+  min-height: 100vh;
 }
 
 
 
 .removeFR{
-    padding-top: 10rem;
+  padding-top: 10rem;
 }
 
 
 
 .finalizarCompraFR{
-    width: 80rem;
-    padding-top: 15px;
+  width: 80rem;
+  padding-top: 15px;
 }
 
 .cardFR{
-    padding-top: 10px;
-    min-height: 10vh;
-    width: 50rem;
+  padding-top: 10px;
+  min-height: 10vh;
+  width: 50rem;
 
 }
 
 
 .pie-pagina {
-    width: 100%;
-  
-  
-  
+  width: 100%;
+
+
+
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: rgb(231, 231, 231);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: rgb(231, 231, 231);
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: #e4e4e4;
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 2rem;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #dfa725;
+}
+
+.pie-pagina .grupo-2 {
+
+  border-top: 1px solid rgba(230, 230, 230, 0.392);
+  padding: 15px 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.463);
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
   }
   
-  .pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
   }
   
-  .pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .card-registration .select-arrow {
+  top: 13px;
   }
   
-  .pie-pagina .grupo-1 .box figure img {
-    width: 250px;
+  .bg-grey {
+  background-color: #eae8e8;
   }
   
-  .pie-pagina .grupo-1 .box h2 {
-    color: rgb(231, 231, 231);
-    margin-bottom: 25px;
-    font-size: 20px;
+  @media (min-width: 992px) {
+  .card-registration-2 .bg-grey {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  }
   }
   
-  .pie-pagina .grupo-1 .box p {
-    color: rgb(231, 231, 231);
-    margin-bottom: 10px;
+  @media (max-width: 991px) {
+  .card-registration-2 .bg-grey {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   }
-  
-  .pie-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: rgb(0, 0, 0);
-    margin-right: 10px;
-    background-color: #e4e4e4;
-    text-align: center;
-    transition: all 300ms ease;
-    border-radius: 2rem;
-  }
-  
-  .pie-pagina .grupo-1 .red-social a:hover {
-    color: #dfa725;
-  }
-  
-  .pie-pagina .grupo-2 {
-  
-    border-top: 1px solid rgba(230, 230, 230, 0.392);
-    padding: 15px 10px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.463);
-  }
-  
-  .pie-pagina .grupo-2 small {
-    font-size: 15px;
   }
