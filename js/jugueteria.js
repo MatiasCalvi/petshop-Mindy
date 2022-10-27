@@ -14,9 +14,23 @@ function htmlCarta(array) {
         <div class="card-body">
           <h5 class="titlee">${array.nombre}</h5>
           <p>Price: ${array.precio}</p>
-          <p class="card-text"> ${array.descripcion}</p>
-          <button class="btn-comprar card-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
-          <button class="btn-comprar movile-button"> <imgclass="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
+          <p class="card-text">
+            ${array.descripcion}
+          </p>
+          <a href="./carrito.html"><button class="btn-comprar card-button">
+            <img
+              class="btn-comprar-img"
+              src="../assets/img/carritoBtn.png"
+              height="30px"
+              alt="huellita"
+            />
+          </button></a>
+          <a href="./carrito.html"><button class="movile-button">   <img
+          class="btn-comprar-img"
+          src="../assets/img/carritoBtn.png"
+          height="30px"
+          alt="huellita"
+        /></button></a>
         </div>
       </div> 
       `;
@@ -36,8 +50,20 @@ function htmlCartaPocoStock(array) {
          <p class="card-text" style='color:red; font-size:1.1rem;'>
            ! Ultimas Unidades !
          </p>
-         <button class="btn-comprar card-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
-         <button class="btn-comprar movile-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
+         <a href="./carrito.html"><button class="btn-comprar card-button">
+           <img
+             class="btn-comprar-img"
+             src="../assets/img/carritoBtn.png"
+             height="30px"
+             alt="huellita"
+           />
+         </button></a>
+         <a href="./carrito.html"><button class="movile-button"><img
+         class="btn-comprar-img"
+         src="../assets/img/carritoBtn.png"
+         height="30px"
+         alt="huellita"
+       /></button></a>
        </div>
      </div> 
      `;
