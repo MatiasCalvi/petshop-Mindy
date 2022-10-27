@@ -97,6 +97,13 @@ async function capturar(){
             let busqueda=juguetes.filter(card=>card.nombre.toLowerCase().includes(evento.target.value))
             contenedorCards.innerHTML=""
             busqueda.forEach(e=>htmlCard(e))
+            if(busqueda.length === 0){
+                contenedorCards.innerHTML =` 
+                <div style="min-height:50vh;">
+                   <img class="error"  height="400"width="350" src="../assets/img/404.png" alt="page not found">
+                </div>
+                `
+            }
         })   
     }
     catch(error){
