@@ -355,7 +355,7 @@ input:not(:placeholder-shown)~.reset {
   }
 
   .movile-button {
-    background-color: #e92e8b;
+    background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
     border-radius: 1rem;
     border: none;
 
@@ -440,3 +440,11 @@ input:not(:placeholder-shown)~.reset {
   .active {
   color: white !important;
   }
+
+  #pet-items-select{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px;
+    width: 17rem;
+  }
+
