@@ -83,32 +83,12 @@
       <div class="d-flex mt-5 justify-content-center flex-wrap">
         <div class="container mc-select p-0">
           <div class="select m-3" tabindex="1" id="contenedor-select">
-            <input
-              class="selectopt"
-              name="test"
-              type="radio"
-              id="opt1"
-              checked
-            />
-            <label class="option"
-              >Oranges<input
-                class="selectopt"
-                name="test"
-                type="radio"
-                id="opt2"
-            /></label>
-            <label for="opt2" class="option"
-              >Apples<input
-                class="selectopt"
-                name="test"
-                type="radio"
-                id="opt3"
-            /></label>
-            <label for="opt3" class="option">Grapefruit</label>
-            <input class="selectopt" name="test" type="radio" id="opt4" />
-            <label for="opt4" class="option">Bananas</label>
-            <input class="selectopt" name="test" type="radio" id="opt5" />
-            <label for="opt5" class="option">Watermelon</label>
+            <select id="pet-items-select">
+              <option>Seleccione...</option>
+              <option value="1">Hasta $500</option>
+              <option value="2">Mas de $500</option>
+              `)
+            </select>
           </div>
         </div>
         <form class="form m-3">
@@ -156,43 +136,48 @@
         </form>
       </div>
     </main>
-    
-<<<<<<< HEAD
-    <div id="contenedor-cards" class="container-fluid d-flex justify-content-around flex-wrap gap-4 pb-2">
 
-  
+    <div
+      class="container-fluid d-flex justify-content-around flex-wrap gap-4 pb-2"
+      id="contenedor-cards"
+    ></div>
+    <footer class="pie-pagina bg-dark">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img
+                src="../assets/img/perro-logo-blancoo.png"
+                alt="Logo de SLee Dw"
+                height="150"
+                style="width: 100%"
+              />
+            </a>
+          </figure>
         </div>
-=======
-    <div class="container-fluid d-flex justify-content-around flex-wrap gap-4 pb-2" id="contenedor-cards">
->>>>>>> 6013fa3690458d24e82b230cf2e52ec3cd932919
+        <div class="box">
+          <h2>Nosotros</h2>
+          <p>
+            Somos una compania que provee alegria y felicidad para tus mascotas.
+          </p>
+          <p>Todo lo que tu mejor amigo necesita, esta aqui!</p>
+        </div>
+        <div class="box">
+          <h2>Siguenos!</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://github.com/GinoValenti" class="fa fa-github"></a>
+          </div>
+        </div>
       </div>
-      <footer class="pie-pagina bg-dark">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="../assets/img/perro-logo-blancoo.png" alt="Logo de SLee Dw" height="150" style="width:100% ;">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>Nosotros</h2>
-                <p>Somos una compania que provee alegria y felicidad para tus mascotas.</p>
-                <p>Todo lo que tu mejor amigo necesita, esta aqui!</p>
-            </div>
-            <div class="box">
-                <h2>Siguenos!</h2>
-                <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="https://github.com/GinoValenti" class="fa fa-github"></a>
-                </div>
-            </div>
-        </div>
-        <div class="grupo-2 bg-dark text-light">
-            <small>&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos Reservados.</small>
-        </div>
+      <div class="grupo-2 bg-dark text-light">
+        <small
+          >&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos
+          Reservados.</small
+        >
+      </div>
     </footer>
     <script
       src="https://kit.fontawesome.com/eb496ab1a0.js"
