@@ -66,3 +66,18 @@ function updateCartTotal() {
 
 
 
+
+async function carrito(){
+    try{
+        let api = await fetch("https://apipetshop.herokuapp.com/api/articulos")
+        let data = await api.json();
+        data = data.response;
+        let a=(JSON.parse(localStorage.getItem("productos")))
+        console.log(a)
+    }
+    catch(error){
+        console.log(error)
+    }
+}
+carrito()
+
