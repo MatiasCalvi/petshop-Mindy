@@ -1,4 +1,12 @@
-
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+  font-family: serif;
+}
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .align-center {
     display: flex;
     justify-content: center;
