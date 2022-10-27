@@ -101,9 +101,11 @@ function filtrarFn(especialidad, valor, array) {
 
     if (dato === "datoPorSelect") {
         if (valor == 1) {
+            contenedorCards.innerHTML = ""
            array.filter((card) => card.precio > 500);
         }
           if (valor != 1) {
+            contenedorCards.innerHTML = ""
            array.filter((card) => card.precio <= 500);
         }
     }

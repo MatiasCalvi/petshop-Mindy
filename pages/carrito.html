@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito Petshop MYNDY</title>
+    <script async src="../js/carrito.js"></script>
     <link rel="stylesheet" href="../assets/style/carrito.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -61,41 +62,52 @@
                         <h1 class="fw-bold mb-0 text-black">Carrito de compras</h1> 
                         <h6 class="mb-0 text-muted">1 items</h6>
                       </div>
-                    
-    
+
+
+    <!-- CARD CARRITO -->
                       
-                      <div class="row mb-4 d-flex justify-content-between align-items-center">
-                        <div class="col-md-2 col-lg-2 col-xl-2">
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
-                            class="img-fluid rounded-3" alt="Cotton T-shirt">
-                        </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                          <h6 class="text-muted">Shirt</h6>
-                          <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                        </div>
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                          <button class="btn btn-link px-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                            <i class="fas fa-minus"></i>
-                          </button>
-    
-                          <input id="form1" min="0" name="quantity" value="1" type="number"
-                            class="form-control form-control-sm" />
-    
-                          <button class="btn btn-link px-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                            <i class="fas fa-plus"></i>
-                          </button>
-                        </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 class="mb-0">€ 44.00</h6>
-                        </div>
-                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                          <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                        </div>
+                <section class="container content-section">
+                  <h2 class="section-header">CART</h2>
+                  <div class="cart-row">
+                      <span class="cart-item cart-header cart-column">ITEM</span>
+                      <span class="cart-price cart-header cart-column">PRICE</span>
+                      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                  </div>
+                  <div class="cart-items">
+
+                    <div class="cart-row d-flex">
+                      <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../assets/img/404.png" width="100" height="100">
+                        <span class="cart-item-title">Titulo del Item</span>
                       </div>
-    
+                      <span class="cart-price cart-column">$45.99</span>
+                      <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                      </div>
+                    </div>
+
+                    <div class="cart-row d-flex">
+                      <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../assets/img/404.png" width="100" height="100">
+                        <span class="cart-item-title">Titulo del Item</span>
+                      </div>
+                      <span class="cart-price cart-column">$45.99</span>
+                      <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+
+              </section>
+                      
+
+                      
+    <!-- FIN CARD CARRITO -->
+
                       <hr class="my-4">
     
                       <div class="pt-5">
@@ -103,31 +115,15 @@
                           <i
                               class="fas fa-long-arrow-alt-left me-2"></i>Quitar todo</a></h6>
                       </div>
-                      <div class="pt-5">
-                        <h6 class="mb-0"><a href="#!" class="text-body">
-                          <i
-                              class="fas fa-long-arrow-alt-left me-2 "></i>Quitar un item</a></h6>
-                      </div>
                     </div>
                   </div>
                   <div class="col-lg-4 bg-grey">
                     <div class="p-5">
                      
                       <h3 class="fw-bold mb-5 mt-2 pt-1">Resumen</h3>
-                      
-                      <hr class="my-4">
-    
-                      <div class="d-flex justify-content-between mb-4">
-                        <h5 class="text-uppercase">items 3</h5>
-                        <h5>€ 132.00</h5>
-                      </div>
-
-    
-                      <hr class="my-4">
-    
                       <div class="d-flex justify-content-between mb-5">
                         <h5 class="text-uppercase">Precio total</h5>
-                        <h5>€ 137.00</h5>
+                        <h5 class="cart-total-price">$183.96</h5>
                       </div>
     
                       <button type="button" class="btn btn-dark btn-block btn-lg"
@@ -175,6 +171,7 @@
         <small>&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos Reservados.</small>
       </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
