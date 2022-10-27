@@ -11,7 +11,13 @@
   height: 90vh;
   width: 100%;
 }
+.nav-link:hover{
+  color: white;
+}
 
+.active {
+ color: white !important;
+}
 .body-index {
   background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
 }

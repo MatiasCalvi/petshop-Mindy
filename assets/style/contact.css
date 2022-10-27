@@ -273,3 +273,75 @@ input {
     padding: 35px 0px;
   }
 }
+.redondos .checkmark:after {
+  left: 0.55em;
+  top: 0.25em;
+  width: 0.25em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+.redondos input {
+  display: none;
+}
+.redondos {
+  cursor: pointer;
+
+}
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 3em;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(13, 13, 13, 0);
+  border:1px solid rgba(0, 0, 0, 0.264);
+  font-weight: 500;
+  border-radius: 25px;
+  transition: 0.15s;
+  font-size: 15px;
+  padding: 3px;
+  margin-left: 5px;
+  text-align: center;
+  color: rgb(57, 57, 57);
+  transition: 280ms ease-in-out;
+margin-bottom: 10px;
+}
+
+.checkmark:hover {
+  background-color: white;
+  color: #000;
+}
+.redondos input:checked~.checkmark {
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  color: #000;
+
+  transition: 0.15s;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.redondos input:checked~.checkmark:after {
+  display: block;
+}
+
+.redondos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav-link:hover{
+  color: white;
+}
+
+.active {
+ color: white !important;
+}
