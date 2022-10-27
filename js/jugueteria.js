@@ -3,7 +3,6 @@ let contenedorSelect = document.getElementById("contenedor-select");
 let searchBar = document.getElementById("searchBar");
 let select = document.getElementById("pet-items-select");
 let aplicado = {};
-let selectFiltrado=[]
 
 function htmlCarta(array) {
   contenedorCards.innerHTML += `
@@ -90,26 +89,31 @@ function searchBarfn(evento, array) {
 }
 
 function filtrarFn(especialidad, valor, array) {
+  
   aplicado[especialidad] = valor;
+
+  contenedorCards.innerHTML = "";
 
   for (let dato in aplicado) {
     if (dato === "datoPorSearchBar") {
-       array = array.filter((card) =>
+      array = array.filter((card) =>
         card.nombre.toLowerCase().includes(aplicado[dato].toLowerCase())
       );
     }
 
     if (dato === "datoPorSelect") {
-        if (valor == 1) {
-           array.filter((card) => card.precio > 500);
-        }
-          if (valor != 1) {
-           array.filter((card) => card.precio <= 500);
-        }
+      if (aplicado["datoPorSelect"] == 1) {
+        array = array.filter((card) => card.precio <= 500);
+      } 
+      if(aplicado["datoPorSelect"] == 2){
+        array = array.filter((card) => card.precio > 500);
+      }
+      if(aplicado["datoPorSelect"] == 3){
+         return array
+      }
     }
   }
-  console.log(aplicado)
-  return array
+  return array;
 }
 
 async function capturar() {
@@ -120,35 +124,13 @@ async function capturar() {
     let juguetes = data.filter((e) => e.tipo === "Juguete");
     imprimir(condicionStockMayor(juguetes), condicionPocoStock(juguetes));
     searchBar.addEventListener("keyup", (evento) => {
-     /*  let busqueda = juguetes.filter((card) =>
-        card.nombre.toLowerCase().includes(evento.target.value)
-      );
-      contenedorCards.innerHTML = "";
-      busqueda.forEach((e) => htmlCarta(e));
-      if (busqueda.length === 0) {
-        contenedorCards.innerHTML = ` 
-                <div style="min-height:50vh;">
-                   <img class="error"  height="400"width="350" src="../assets/img/404.png" alt="page not found">
-                </div>
-                `;
-      } */
-      let escribir=filtrarFn("datoPorSearchBar", evento.target.value, juguetes)
-      escribir.forEach(e=>htmlCarta(e))
-      console.log(escribir)
+      let escribir = filtrarFn("datoPorSearchBar",evento.target.value,juguetes);
+      //escribir.forEach(e=>e.stock)?//
+      console.log(escribir);
     });
     select.addEventListener("change", (evento) => {
-      /* let mayor = juguetes.filter((card) => card.precio > 500);
-      let menor = juguetes.filter((card) => card.precio <= 500);
-      contenedorCards.innerHTML = "";
-      console.log(evento.target.value);
-      if (evento.target.value == 1) {
-        menor.forEach((e) => htmlCarta(e));
-      }
-      if (evento.target.value != 1) {
-        mayor.forEach((e) => htmlCarta(e));
-      } */
-      let seleccionar=filtrarFn("datoPorSelect", evento.target.value, juguetes)
-      seleccionar.forEach(e=>htmlCarta(e))
+      let seleccionar = filtrarFn("datoPorSelect",evento.target.value,juguetes);
+      imprimir(condicionStockMayor(seleccionar), condicionPocoStock(seleccionar));
       console.log(seleccionar)
     });
   } catch (error) {
