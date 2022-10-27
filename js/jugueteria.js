@@ -146,19 +146,28 @@ async function capturar() {
   }
 }
 capturar();
-/* 
-  let addToCartButtons = document.getElementsByClassName('btn-comprar')
-  for (let i = 0; i < addToCartButtons.length; i++) {
-    let button = addToCartButtons[i]
-    button.addEventListener('click', addToCartClicked)
+
+let array=[]
+
+function apreta(obj){
+  array.push(obj)
+  if(array.includes(obj)===obj){
+    console.log(true)
   }
 
-  function addToCartClicked(event) {
-    let button = event.target
-    let shopItem = button.parentElement.parentElement
-    let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
-    console.log(title)
-  }
+  Toastify({
+    text: "Agregado al carrito",
+    className: "info",
+    gravity: "top",
+    position: "right",
+    duration: 1500,
+    close: true,
+    style: {
+      background: "linear-gradient(to left, #f28f16 0%, #eb466b 100%)",
+    }
+  }).showToast();
+  localStorage.setItem("productos",JSON.stringify(array))
+}
 
 
   console.log(juguetes) */
