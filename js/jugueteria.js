@@ -149,3 +149,36 @@ async function capturar() {
   }
 }
 capturar();
+
+
+let array=[]
+
+function apreta(obj){
+
+  async function capturar1(){
+    try{
+      let api = await fetch("https://apipetshop.herokuapp.com/api/articulos");
+      let data = await api.json();
+      data = data.response;
+      array=array.concat(data.filter(e=>e._id.includes(obj)))
+      localStorage.setItem("productos",JSON.stringify(array))
+    }
+    catch(error){
+      console.log(error)
+    }
+  }
+  capturar1()
+
+  Toastify({
+    text: "Agregado al carrito",
+    className: "info",
+    gravity: "top",
+    position: "right",
+    duration: 1500,
+    close: true,
+    style: {
+      background: "linear-gradient(to left, #f28f16 0%, #eb466b 100%)",
+    }
+  }).showToast();
+  /* localStorage.setItem("productos",JSON.stringify(array)) */
+}
