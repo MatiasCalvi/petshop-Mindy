@@ -438,5 +438,5 @@ input:not(:placeholder-shown)~.reset {
   }
   
   .active {
-   color: white !important;
+  color: white !important;
   }
