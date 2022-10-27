@@ -52,12 +52,12 @@ function htmlCartaPocoStock(array) {
          <span class="tag tag-teal">${array.tipo}</span>
        </div>
        <div class="card-body">
-         <h5 class="titlee shop-item-title">${array.nombre}</h5>
+         <h5 class="titlee">${array.nombre}</h5>
          <p>Price: ${array.precio}</p>
          <p class="card-text">
            POCO STOCK
          </p>
-         <button id="${array._id}" onClick="agregarProducto('${array._id}') class="btn-comprar card-button">
+         <button class="btn-comprar card-button">
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
@@ -154,24 +154,4 @@ async function capturar() {
   }
 }
 capturar();
-/* 
-  let addToCartButtons = document.getElementsByClassName('btn-comprar')
-  for (let i = 0; i < addToCartButtons.length; i++) {
-    let button = addToCartButtons[i]
-    button.addEventListener('click', addToCartClicked)
-  }
 
-  function addToCartClicked(event) {
-    let button = event.target
-    let shopItem = button.parentElement.parentElement
-    let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
-    console.log(title)
-  }
-
-
-  console.log(juguetes) */
-
-
-  const clickButton = document.getElementsByClassName('btn-comprar').forEach((x)=>{
-    x.addEventListener('click', console.log('se apreto porfa dime'))
-  })
