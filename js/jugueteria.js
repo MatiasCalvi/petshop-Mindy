@@ -52,12 +52,12 @@ function htmlCartaPocoStock(array) {
          <span class="tag tag-teal">${array.tipo}</span>
        </div>
        <div class="card-body">
-         <h5 class="titlee">${array.nombre}</h5>
+         <h5 class="titlee shop-item-title">${array.nombre}</h5>
          <p>Price: ${array.precio}</p>
          <p class="card-text">
            POCO STOCK
          </p>
-         <button class="btn-comprar card-button">
+         <button id="${array._id}" onClick="agregarProducto('${array._id}') class="btn-comprar card-button">
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
@@ -154,3 +154,5 @@ async function capturar() {
   }
 }
 capturar();
+
+

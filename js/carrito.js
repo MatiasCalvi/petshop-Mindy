@@ -1,3 +1,15 @@
+fetch("https://apipetshop.herokuapp.com/api/articulos")
+.then(function(response){
+    return response.json()
+})
+.then(function(data){
+    localStorage.setItem("products",JSON.stringify(data))
+    if(!localStorage.getItem("cart")){
+        localStorage.setItem("cart", "[]")
+    }
+})
+
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -51,4 +63,4 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
-console.log(contenedorCards)
+
