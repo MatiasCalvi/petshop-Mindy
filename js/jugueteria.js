@@ -21,15 +21,15 @@ function htmlCarta(array) {
           <p class="card-text">
             ${array.descripcion}
           </p>
-          <button class="btn-comprar card-button">
+          <a href="./carrito.html"><button class="btn-comprar card-button">
             <img
               class="btn-comprar-img"
               src="../assets/img/carritoBtn.png"
               height="30px"
               alt="huellita"
             />
-          </button>
-          <a href=""><button class="movile-button">   <img
+          </button></a>
+          <a href="./carrito.html"><button class="movile-button">   <img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -57,15 +57,15 @@ function htmlCartaPocoStock(array) {
          <p class="card-text">
            POCO STOCK
          </p>
-         <button class="btn-comprar card-button">
+         <a href="./carrito.html"><button class="btn-comprar card-button">
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
              height="30px"
              alt="huellita"
            />
-         </button>
-         <a href=""><button class="movile-button"><img
+         </button></a>
+         <a href="./carrito.html"><button class="movile-button"><img
          class="btn-comprar-img"
          src="../assets/img/carritoBtn.png"
          height="30px"
