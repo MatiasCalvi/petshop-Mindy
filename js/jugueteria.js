@@ -21,7 +21,7 @@ function htmlCarta(array) {
           <p class="card-text">
             ${array.descripcion}
           </p>
-          <a href="./carrito.html"><button class="btn-comprar card-button">
+          <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
             <img
               class="btn-comprar-img"
               src="../assets/img/carritoBtn.png"
@@ -29,7 +29,7 @@ function htmlCarta(array) {
               alt="huellita"
             />
           </button></a>
-          <a href="./carrito.html"><button class="movile-button"><img
+          <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -57,7 +57,7 @@ function htmlCartaPocoStock(array) {
          <p class="card-text">
            POCO STOCK
          </p>
-         <a href="./carrito.html"><button class="btn-comprar card-button">
+         <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
@@ -65,7 +65,7 @@ function htmlCartaPocoStock(array) {
              alt="huellita"
            />
          </button>
-         <a href=""><button class="movile-button"><img
+         <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
          class="btn-comprar-img"
          src="../assets/img/carritoBtn.png"
          height="30px"
@@ -143,7 +143,6 @@ async function capturar() {
     searchBar.addEventListener("keyup", (evento) => {
       let escribir = filtrarFn("datoPorSearchBar",evento.target.value,juguetes);
       escribir.forEach(e=>(e.stock<=3)?htmlCartaPocoStock(e):htmlCarta(e))
-      console.log(escribir)
     });
     select.addEventListener("change", (evento) => {
       let seleccionar = filtrarFn("datoPorSelect",evento.target.value,juguetes);
@@ -170,8 +169,24 @@ capturar();
 
 
   console.log(juguetes) */
+let array=[]
 
+function apreta(obj){
+  array.push(obj)
+  if(array.includes(obj)===obj){
+    console.log(true)
+  }
 
-  const clickButton = document.getElementsByClassName('btn-comprar').forEach((x)=>{
-    x.addEventListener('click', console.log('se apreto porfa dime'))
-  })
+  Toastify({
+    text: "Agregado al carrito",
+    className: "info",
+    gravity: "top",
+    position: "right",
+    duration: 1500,
+    close: true,
+    style: {
+      background: "linear-gradient(to left, #f28f16 0%, #eb466b 100%)",
+    }
+  }).showToast();
+  localStorage.setItem("productos",JSON.stringify(array))
+}
