@@ -1,206 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juguetes Petshop MYNDY</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../assets/style/farmacia-styles.css" />
-  </head>
-  <body class="body-toys">
-    <nav class="navbar navbar-expand-lg bg-glass">
-      <div class="container-fluid d-flex me-auto">
-        <img src="../assets/img/perro-logo.png" alt="" height="70" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juguetes Petshop MYNDY</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/style/farmacia-styles.css" />
+</head>
+
+<body class="body-toys">
+  <nav class="navbar navbar-expand-lg bg-glass">
+    <div class="container-fluid d-flex me-auto">
+      <img src="../assets/img/perro-logo.png" alt="" height="70" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu text-center bg-dark">
+              <li>
+                <a class="dropdown-item text-orange" href="#">Farmacia</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-orange" href="./juguetes.html">Juguetes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <h1 style="color: #e9e9e9">DALE LA MEJOR VIDA POSIBLE</h1>
+    <p class="text-center text-light">
+      Todo lo que tu mascota necesita<br /> lo encontraras aqui.
+    </p>
+
+    <video style="width: 100%" muted autoplay loop>
+      <source src="../assets/img/Cachorro - 4740.mp4" type="video/mp4" />
+    </video>
+  </header>
+  <main class="container-fluid">
+    <div class="d-flex mt-5 justify-content-center flex-wrap">
+      <div class="container mc-select p-0">
+        <div class="select m-3" tabindex="1" id="contenedor-select">
+          <select id="pet-items-select">
+            <option value="3">Seleccione...</option>
+            <option value="1">Hasta $500</option>
+            <option value="2">Mas de $500</option>
+          </select>
+        </div>
+      </div>
+      <form class="form m-3">
+        <button>
+          <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-labelledby="search">
+            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+              stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
-                >Inicio</a
-              >
-            </li>
+        <input class="input" placeholder="Type your text" required="" type="text" id="searchBar" />
+        <button class="reset" type="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </main>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <ul class="dropdown-menu text-center bg-dark">
-                <li>
-                  <a class="dropdown-item text-orange" href="#"
-                    >Farmacia</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item text-orange" href="./juguetes.html">Juguetes</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+  <div class="container-fluid d-flex justify-content-around flex-wrap gap-4 pb-2" id="contenedor-cards">
+  </div>
+  <footer class="pie-pagina bg-dark">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="../assets/img/perro-logo-blancoo.png" alt="Logo de SLee Dw" height="150" style="width:100% ;">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>Nosotros</h2>
+        <p>Somos una compania que provee alegria y felicidad para tus mascotas.</p>
+        <p>Todo lo que tu mejor amigo necesita, esta aqui!</p>
+      </div>
+      <div class="box">
+        <h2>Siguenos!</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://github.com/GinoValenti" class="fa fa-github"></a>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="grupo-2 bg-dark text-light">
+      <small>&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/farmacia.js"></script>
+  <script src="../js/carrito.js"></script>
+</body>
 
-    <header class="header">
-      <h1 style="color: #e9e9e9">DALE LA MEJOR VIDA POSIBLE</h1>
-      <p class="text-center text-light">
-        Todo lo que tu mascota necesita<br/> lo encontraras aqui.
-      </p>
-
-      <video style="width: 100%" muted autoplay loop>
-        <source src="../assets/img/Cachorro - 4740.mp4" type="video/mp4" />
-      </video>
-    </header>
-    <main class="container-fluid">
-      <div class="d-flex mt-5 justify-content-center flex-wrap">
-        <div class="container mc-select p-0">
-          <div class="select m-3" tabindex="1" id="contenedor-select">
-            <input
-              class="selectopt"
-              name="test"
-              type="radio"
-              id="opt1"
-              checked
-            />
-            <label class="option"
-              >Oranges<input
-                class="selectopt"
-                name="test"
-                type="radio"
-                id="opt2"
-            /></label>
-            <label for="opt2" class="option"
-              >Apples<input
-                class="selectopt"
-                name="test"
-                type="radio"
-                id="opt3"
-            /></label>
-            <label for="opt3" class="option">Grapefruit</label>
-            <input class="selectopt" name="test" type="radio" id="opt4" />
-            <label for="opt4" class="option">Bananas</label>
-            <input class="selectopt" name="test" type="radio" id="opt5" />
-            <label for="opt5" class="option">Watermelon</label>
-          </div>
-        </div>
-        <form class="form m-3">
-          <button>
-            <svg
-              width="17"
-              height="16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-labelledby="search"
-            >
-              <path
-                d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
-                stroke="currentColor"
-                stroke-width="1.333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-          <input
-            class="input"
-            placeholder="Type your text"
-            required=""
-            type="text"
-            id="searchBar"
-          />
-          <button class="reset" type="reset">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </main>
-    
-    <div class="container-fluid d-flex justify-content-around flex-wrap gap-4 pb-2" id="contenedor-cards">
-      </div>
-      <footer class="pie-pagina bg-dark">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="../assets/img/perro-logo-blancoo.png" alt="Logo de SLee Dw" height="150" style="width:100% ;">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>Nosotros</h2>
-                <p>Somos una compania que provee alegria y felicidad para tus mascotas.</p>
-                <p>Todo lo que tu mejor amigo necesita, esta aqui!</p>
-            </div>
-            <div class="box">
-                <h2>Siguenos!</h2>
-                <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="https://github.com/GinoValenti" class="fa fa-github"></a>
-                </div>
-            </div>
-        </div>
-        <div class="grupo-2 bg-dark text-light">
-            <small>&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos Reservados.</small>
-        </div>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/eb496ab1a0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="../js/farmacia.js"></script>
-    <script src="../js/carrito.js"></script>
-  </body>
 </html>
