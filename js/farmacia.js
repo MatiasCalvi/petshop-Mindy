@@ -6,7 +6,7 @@ let aplicado = {};
 
 function htmlCarta(array) {
   contenedorCards.innerHTML += `
-     <div class="card" style="width: 16rem" data-aos="fade-up">
+     <div class="card" data-aos="fade-up">
         <img src="${array.imagen}" class="card-img-top images" alt="${array.nombre}"/>
         <div class="category-div">
           <span class="tag tag-teal">${array.tipo}</span>
@@ -14,7 +14,7 @@ function htmlCarta(array) {
         <div class="card-body">
           <h5 class="titlee">${array.nombre}</h5>
           <p>Price: ${array.precio}</p>
-          <p class="card-text"> ${array.descripcion}</p>
+          <p class="card-description"> ${array.descripcion}</p>
           <button class="btn-comprar card-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
           <button class="btn-comprar movile-button"> <imgclass="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
         </div>
@@ -24,7 +24,7 @@ function htmlCarta(array) {
 
 function htmlCartaPocoStock(array) {
   contenedorCards.innerHTML += `
-    <div class="card" style="width: 16rem" data-aos="fade-up">
+    <div class="card" data-aos="fade-up">
        <img src="${array.imagen}" class="card-img-top images" alt="${array.nombre}"/>
        <div class="category-div">
          <span class="tag tag-teal">${array.tipo}</span>
@@ -33,7 +33,7 @@ function htmlCartaPocoStock(array) {
          <h5 class="titlee">${array.nombre}</h5>
          <p>Price: ${array.precio}</p>
          <p class="card-description"> ${array.descripcion}</p>
-         <p class="card-text" style='color:red; font-size:1.1rem;'>
+         <p class="card-text">
            ! Ultimas Unidades !
          </p>
          <button class="btn-comprar card-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>

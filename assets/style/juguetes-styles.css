@@ -234,15 +234,43 @@ input:not(:placeholder-shown)~.reset {
   margin-top: 3px;
 }
 
+#contenedor-cards {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 1.1rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+.card-text {
+  margin: 2rem 0 !important;
+  font-size: 1.3rem !important;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.titlee{
+  text-align: center;
+}
+
 .card {
-  margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 22rem;
+}
+
+.card-header img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .card-header img {
