@@ -6,26 +6,30 @@ let aplicado = {};
 
 function htmlCarta(array) {
   contenedorCards.innerHTML += `
-     <div class="card" data-aos="fade-up">
-        <img src="${array.imagen}" class="card-img-top images" alt="${array.nombre}"/>
+     <div class="card" style="width: 16rem" data-aos="fade-up">
+        <img
+          src="${array.imagen}"
+          class="card-img-top images"
+          alt="${array.nombre}"
+        />
         <div class="category-div">
           <span class="tag tag-teal">${array.tipo}</span>
         </div>
         <div class="card-body">
           <h5 class="titlee">${array.nombre}</h5>
           <p>Price: ${array.precio}</p>
-          <p class="card-description">
+          <p class="card-text">
             ${array.descripcion}
           </p>
-          <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
+          <button class="btn-comprar card-button">
             <img
               class="btn-comprar-img"
               src="../assets/img/carritoBtn.png"
               height="30px"
               alt="huellita"
             />
-          </button></a>
-          <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
+          </button>
+          <a href=""><button class="movile-button">   <img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -38,19 +42,22 @@ function htmlCarta(array) {
 
 function htmlCartaPocoStock(array) {
   contenedorCards.innerHTML += `
-    <div class="card" data-aos="fade-up">
-       <img src="${array.imagen}" class="card-img-top images" alt="${array.nombre}"/>
+    <div class="card" style="width: 16rem" data-aos="fade-up">
+       <img
+         src="${array.imagen}"
+         class="card-img-top images"
+         alt="${array.nombre}"
+       />
        <div class="category-div">
          <span class="tag tag-teal">${array.tipo}</span>
        </div>
        <div class="card-body">
          <h5 class="titlee">${array.nombre}</h5>
          <p>Price: ${array.precio}</p>
-         <p class="card-description"> ${array.descripcion}</p>
          <p class="card-text">
-           ! Ultimas Unidades !
+           POCO STOCK
          </p>
-         <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
+         <button class="btn-comprar card-button">
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
@@ -58,12 +65,7 @@ function htmlCartaPocoStock(array) {
              alt="huellita"
            />
          </button>
-         <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
-         class="btn-comprar-img"
-         src="../assets/img/carritoBtn.png"
-         height="30px"
-         alt="huellita"
-       /></button></a>
+         <a href=""><button class="movile-button">More info</button></a>
        </div>
      </div> 
      `;
@@ -136,6 +138,7 @@ async function capturar() {
     searchBar.addEventListener("keyup", (evento) => {
       let escribir = filtrarFn("datoPorSearchBar",evento.target.value,juguetes);
       escribir.forEach(e=>(e.stock<=3)?htmlCartaPocoStock(e):htmlCarta(e))
+      console.log(escribir)
     });
     select.addEventListener("change", (evento) => {
       let seleccionar = filtrarFn("datoPorSelect",evento.target.value,juguetes);
@@ -146,49 +149,3 @@ async function capturar() {
   }
 }
 capturar();
-
-let array=[]
-
-function apreta(obj){
-  array.push(obj)
-  if(array.includes(obj)===obj){
-    console.log(true)
-  }
-
-  Toastify({
-    text: "Agregado al carrito",
-    className: "info",
-    gravity: "top",
-    position: "right",
-    duration: 1500,
-    close: true,
-    style: {
-      background: "linear-gradient(to left, #f28f16 0%, #eb466b 100%)",
-    }
-  }).showToast();
-  localStorage.setItem("productos",JSON.stringify(array))
-}
-
-
-  console.log(juguetes) */
-let array=[]
-
-function apreta(obj){
-  array.push(obj)
-  if(array.includes(obj)===obj){
-    console.log(true)
-  }
-
-  Toastify({
-    text: "Agregado al carrito",
-    className: "info",
-    gravity: "top",
-    position: "right",
-    duration: 1500,
-    close: true,
-    style: {
-      background: "linear-gradient(to left, #f28f16 0%, #eb466b 100%)",
-    }
-  }).showToast();
-  localStorage.setItem("productos",JSON.stringify(array))
-}
