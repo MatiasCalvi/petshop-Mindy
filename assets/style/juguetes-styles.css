@@ -433,3 +433,17 @@ input:not(:placeholder-shown)~.reset {
       padding: 35px 0px;
     }
   }  
+  .nav-link:hover{
+    color: white;
+  }
+  
+  .active {
+  color: white !important;
+  }
+
+  #pet-items-select{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px;
+    width: 17rem;
+  }

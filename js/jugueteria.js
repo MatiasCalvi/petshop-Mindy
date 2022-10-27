@@ -112,6 +112,13 @@ function filtrarFn(especialidad, valor, array) {
          return array
       }
     }
+    if(array.length=== 0){
+      contenedorCards.innerHTML= contenedorCards.innerHTML =` 
+      <div style="min-height:50vh;">
+         <img class="error"  height="400"width="350" src="../assets/img/404.png" alt="page not found">
+      </div>
+      `
+    }
   }
   return array;
 }
@@ -125,13 +132,12 @@ async function capturar() {
     imprimir(condicionStockMayor(juguetes), condicionPocoStock(juguetes));
     searchBar.addEventListener("keyup", (evento) => {
       let escribir = filtrarFn("datoPorSearchBar",evento.target.value,juguetes);
-      //escribir.forEach(e=>e.stock)?//
-      console.log(escribir);
+      escribir.forEach(e=>(e.stock<=3)?htmlCartaPocoStock(e):htmlCarta(e))
+      console.log(escribir)
     });
     select.addEventListener("change", (evento) => {
       let seleccionar = filtrarFn("datoPorSelect",evento.target.value,juguetes);
-      imprimir(condicionStockMayor(seleccionar), condicionPocoStock(seleccionar));
-      console.log(seleccionar)
+      seleccionar.forEach(e=>(e.stock<=3)?htmlCartaPocoStock(e):htmlCarta(e))
     });
   } catch (error) {
     console.log(error);
