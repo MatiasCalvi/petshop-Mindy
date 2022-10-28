@@ -50,10 +50,12 @@ function removeCartItem(event) {
 
 function removeFromLocal(id) {
 
-    const isLargeNumber = (element) => element._id == id;
-    let a= productosTienda.findIndex(isLargeNumber);
-    let b=productosTienda.splice(0,a)
-    console.log(b)
+    let index= productosTienda.findIndex((element) => element._id === id);
+    productosTienda.splice(index,1)
+    let borrado=JSON.stringify(productosTienda)
+    localStorage.setItem("productos",borrado)
+   /*  let a=productosTienda.filter(obj=> obj._id!==id)
+    console.log(a) */
 }
 
 function quantityChanged(event) {
