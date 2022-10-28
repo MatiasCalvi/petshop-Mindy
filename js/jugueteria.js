@@ -14,9 +14,23 @@ function htmlCarta(array) {
         <div class="card-body">
           <h5 class="titlee">${array.nombre}</h5>
           <p>Price: ${array.precio}</p>
-          <p class="card-description"> ${array.descripcion}</p>
-          <button class="btn-comprar card-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
-          <button class="btn-comprar movile-button"> <imgclass="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
+          <p class="card-description">
+            ${array.descripcion}
+          </p>
+          <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
+            <img
+              class="btn-comprar-img"
+              src="../assets/img/carritoBtn.png"
+              height="30px"
+              alt="huellita"
+            />
+          </button></a>
+          <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
+          class="btn-comprar-img"
+          src="../assets/img/carritoBtn.png"
+          height="30px"
+          alt="huellita"
+        /></button></a>
         </div>
       </div> 
       `;
@@ -36,8 +50,20 @@ function htmlCartaPocoStock(array) {
          <p class="card-text">
            ! Ultimas Unidades !
          </p>
-         <button class="btn-comprar card-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
-         <button class="btn-comprar movile-button"><img class="btn-comprar-img" src="../assets/img/carritoBtn.png" height="30px" alt="huellita"/></button>
+         <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
+           <img
+             class="btn-comprar-img"
+             src="../assets/img/carritoBtn.png"
+             height="30px"
+             alt="huellita"
+           />
+         </button>
+         <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
+         class="btn-comprar-img"
+         src="../assets/img/carritoBtn.png"
+         height="30px"
+         alt="huellita"
+       /></button></a>
        </div>
      </div> 
      `;
