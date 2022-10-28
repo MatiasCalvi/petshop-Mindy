@@ -17,7 +17,7 @@ function htmlCarta(array) {
           <p class="card-description">
             ${array.descripcion}
           </p>
-          <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
+          <a><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
             <img
               class="btn-comprar-img"
               src="../assets/img/carritoBtn.png"
@@ -25,7 +25,7 @@ function htmlCarta(array) {
               alt="huellita"
             />
           </button></a>
-          <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
+          <a><button class="movile-button" onclick="apreta('${array._id}')"><img
           class="btn-comprar-img"
           src="../assets/img/carritoBtn.png"
           height="30px"
@@ -50,7 +50,7 @@ function htmlCartaPocoStock(array) {
          <p class="card-text">
            ! Ultimas Unidades !
          </p>
-         <a href="#"><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
+         <a><button class="btn-comprar card-button" onclick="apreta('${array._id}')">
            <img
              class="btn-comprar-img"
              src="../assets/img/carritoBtn.png"
@@ -58,7 +58,7 @@ function htmlCartaPocoStock(array) {
              alt="huellita"
            />
          </button>
-         <a href="#"><button class="movile-button" onclick="apreta('${array._id}')"><img
+         <a><button class="movile-button" onclick="apreta('${array._id}')"><img
          class="btn-comprar-img"
          src="../assets/img/carritoBtn.png"
          height="30px"
