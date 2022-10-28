@@ -1,6 +1,7 @@
 let cartItemContainer = document.getElementsByClassName("cart-items")[0];
 let cartRows = cartItemContainer.getElementsByClassName("cart-row");
 let productosTienda = JSON.parse(localStorage.getItem("productos"));
+let productosMedicamentos = JSON.parse(localStorage.getItem("Medicamentos"));
 
 console.log(productosTienda);
 
@@ -19,6 +20,7 @@ function htmlCarta(array) {
 }
 
 productosTienda.forEach((element) => htmlCarta(element));
+productosMedicamentos.forEach((element) => htmlCarta(element));
 updateCartTotal();
 
 if (document.readyState == "loading") {
@@ -64,6 +66,7 @@ function purchaseCliked(){
         cartItems.removeChild(cartItems.firstChild)
       }
       localStorage.removeItem('productos')
+      localStorage.removeItem('Medicamentos')
         updateCartTotal()
 }
 
@@ -73,6 +76,7 @@ function removeAllItems(){
       cartItems.removeChild(cartItems.firstChild)
     }
     localStorage.removeItem('productos')
+    localStorage.removeItem('Medicamentos')
       updateCartTotal()
 }
 
@@ -85,11 +89,13 @@ function removeCartItem(event) {
 function removeFromLocal(id) {
 
     let index= productosTienda.findIndex((element) => element._id === id);
+    let index2=productosMedicamentos.findIndex((element) => element._id === id);
     productosTienda.splice(index,1)
+    productosMedicamentos.splice(index2,1)
     let borrado=JSON.stringify(productosTienda)
+    let borrado2=JSON.stringify(productosMedicamentos)
     localStorage.setItem("productos",borrado)
-   /*  let a=productosTienda.filter(obj=> obj._id!==id)
-    console.log(a) */
+    localStorage.setItem("Medicamentos",borrado2)
 }
 
 function quantityChanged(event) {
