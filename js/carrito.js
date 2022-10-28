@@ -65,7 +65,8 @@ function purchaseCliked(){
       while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
       }
-      localStorage.clear()
+      localStorage.removeItem('productos')
+      localStorage.removeItem('Medicamentos')
         updateCartTotal()
 }
 
@@ -74,7 +75,8 @@ function removeAllItems(){
     while (cartItems.hasChildNodes()) {
       cartItems.removeChild(cartItems.firstChild)
     }
-    localStorage.clear()
+    localStorage.removeItem('productos')
+    localStorage.removeItem('Medicamentos')
       updateCartTotal()
 }
 
