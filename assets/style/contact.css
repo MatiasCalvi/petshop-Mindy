@@ -337,3 +337,8 @@ margin-bottom: 10px;
 .active {
 color: white !important;
 }
+/* input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+} */
