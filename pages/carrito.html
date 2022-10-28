@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito Petshop MYNDY</title>
-
     <link rel="stylesheet" href="../assets/style/carrito.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -102,7 +101,6 @@
                         <h1 class="fw-bold mb-0 text-black">
                           Carrito de compras
                         </h1>
-                        <h6 class="mb-0 text-muted">1 items</h6>
                       </div>
 
                       <!-- CARD CARRITO -->
@@ -153,9 +151,9 @@
 
                       <div class="pt-5">
                         <h6 class="mb-0">
-                          <a href="#!" class="text-body">
-                            <i class="fas fa-long-arrow-alt-left me-2"></i
-                            >Quitar todo</a
+                          <button id="btn-remove-all" href="#!" class="text-body btn-remove-all">
+                            <i  class="fas btn-remove-all fa-long-arrow-alt-left me-2"></i
+                            >Quitar todo</
                           >
                         </h6>
                       </div>
@@ -169,9 +167,9 @@
                         <h5 class="cart-total-price">$0</h5>
                       </div>
 
-                      <button
+                      <button id="btn-purchase"
                         type="button"
-                        class="btn btn-dark btn-block btn-lg"
+                        class="btn btn-dark btn-purchase btn-block btn-lg"
                         data-mdb-ripple-color="dark"
                       >
                         COMPRAR
@@ -235,6 +233,8 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/carrito.js"></script>
+
   </body>
 </html>

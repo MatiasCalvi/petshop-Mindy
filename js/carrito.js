@@ -39,7 +39,41 @@ function ready() {
   for (let i = 0; i < quantityInputs.length; i++) {
     let input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
+
   }
+  let purchaseButton = document.getElementById('btn-purchase')
+  purchaseButton.addEventListener('click', purchaseCliked)
+
+  let btnRemoveAll = document.getElementById('btn-remove-all')
+  btnRemoveAll.addEventListener('click', removeAllItems)
+  console.log(btnRemoveAll)
+
+}
+
+function purchaseCliked(){
+    Swal.fire({
+        title: 'Gracias!',
+        text: 'Tu compra ayuda a muchos animales!',
+        imageUrl: '../assets/img/bulldog-ingles-perro-pura-sangre-sobre-fondo-amarillo-copiar-espacio_666637-199.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+      let cartItems = document.getElementsByClassName('cart-items')[0]
+      while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+      }
+      localStorage.removeItem('productos')
+        updateCartTotal()
+}
+
+function removeAllItems(){
+    let cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+      cartItems.removeChild(cartItems.firstChild)
+    }
+    localStorage.removeItem('productos')
+      updateCartTotal()
 }
 
 function removeCartItem(event) {
@@ -84,3 +118,5 @@ function updateCartTotal() {
   document.getElementsByClassName("cart-total-price")[0].innerText =
     "$" + total;
 }
+
+
