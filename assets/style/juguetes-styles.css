@@ -1,4 +1,6 @@
-
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .header {
   min-height: 55vh;
   background-size: cover;

@@ -110,7 +110,6 @@ async function capturar() {
     searchBar.addEventListener("keyup", (evento) => {
       let escribir = filtrarFn("datoPorSearchBar",evento.target.value,juguetes);
       escribir.forEach(e=>(e.stock<=3)?htmlCartaPocoStock(e):htmlCarta(e))
-      console.log(escribir)
     });
     select.addEventListener("change", (evento) => {
       let seleccionar = filtrarFn("datoPorSelect",evento.target.value,juguetes);
@@ -121,7 +120,6 @@ async function capturar() {
   }
 }
 capturar();
-
 
 let array=[]
 

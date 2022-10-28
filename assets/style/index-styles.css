@@ -1,4 +1,12 @@
-
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+  font-family: serif;
+}
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .align-center {
     display: flex;
     justify-content: center;
@@ -8,7 +16,7 @@
     background-image: url(../img/dog-looking-suprised.png);
 }
 .index-main-area {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
 }
 .nav-link:hover{
