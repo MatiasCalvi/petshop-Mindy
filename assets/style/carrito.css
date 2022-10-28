@@ -8,11 +8,18 @@
   background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
 }
 
-
+.no-btn {
+  background: none;
+  border: none;
+}
 .mainFR{
   height: 90vh;
 }
 
+.btn-remove-all {
+  border: none;
+  background: none;
+}
 .text-orange {
 color:#f28f16 !important;
 }

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito Petshop MYNDY</title>
-
     <link rel="stylesheet" href="../assets/style/carrito.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -13,36 +12,64 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="../assets/img/perro-logo.png">
+    <link rel="icon" href="../assets/img/perro-logo.png" />
   </head>
   <body class="body-carrito">
     <header>
       <nav class="navbar navbar-expand-lg bg-glass">
         <div class="container-fluid d-flex me-auto">
-          <a href="../index.html"><img src="../assets/img/perro-logo.png" alt="" height="70"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="../index.html"
+            ><img src="../assets/img/perro-logo.png" alt="" height="70"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
             <ul class="navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
               </li>
-    
-    
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Shop
                 </a>
                 <ul class="dropdown-menu text-center bg-dark">
-                  <li><a class="dropdown-item text-orange" href="./farmacia.html">Farmacia</a></li>
-                  <li><a class="dropdown-item text-orange" href="./juguetes.html">Juguetes</a></li>
-    
+                  <li>
+                    <a class="dropdown-item text-orange" href="./farmacia.html"
+                      >Farmacia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-orange" href="./juguetes.html"
+                      >Juguetes</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                <a class="nav-link active" href="../pages/contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -50,33 +77,49 @@
       </nav>
     </header>
 
-    <section class="h-100 h-custom" style=" background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);min-height: 66.5vh;">
+    <section
+      class="h-100 h-custom"
+      style="
+        background: linear-gradient(to left, #f28f16 0%, #eb466b 100%);
+        min-height: 66.5vh;
+      "
+    >
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12">
-            <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div
+              class="card card-registration card-registration-2"
+              style="border-radius: 15px"
+            >
               <div class="card-body p-0">
                 <div class="row g-0">
                   <div class="col-lg-8">
                     <div class="p-5">
-                      <div class="d-flex justify-content-between align-items-center mb-5">
-                        <h1 class="fw-bold mb-0 text-black">Carrito de compras</h1> 
-                        <h6 class="mb-0 text-muted">1 items</h6>
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-5"
+                      >
+                        <h1 class="fw-bold mb-0 text-black">
+                          Carrito de compras
+                        </h1>
                       </div>
 
+                      <!-- CARD CARRITO -->
 
-    <!-- CARD CARRITO -->
-                      
-                <section class="container content-section">
-                  <h2 class="section-header">CART</h2>
-                  <div class="cart-row">
-                      <span class="cart-item cart-header cart-column">ITEM</span>
-                      <span class="cart-price cart-header cart-column">PRICE</span>
-                      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                  </div>
-                  <div class="cart-items">
-
-                    <div class="cart-row d-flex">
+                      <section class="container content-section">
+                        <h2 class="section-header">CART</h2>
+                        <div class="cart-row">
+                          <span class="cart-item cart-header cart-column"
+                            >PRODUCTO</span
+                          >
+                          <span class="cart-price cart-header cart-column"
+                            >PRECIO</span
+                          >
+                          <span class="cart-quantity cart-header cart-column"
+                            >CANTIDAD</span
+                          >
+                        </div>
+                        <div class="cart-items">
+                          <!-- <div class="cart-row d-flex">
                       <div class="cart-item cart-column">
                         <img class="cart-item-image" src="../assets/img/404.png" width="100" height="100">
                         <span class="cart-item-title">Titulo del Item</span>
@@ -98,38 +141,39 @@
                         <input class="cart-quantity-input" type="number" value="2">
                         <button class="btn btn-danger" type="button">REMOVE</button>
                       </div>
-                    </div>
+                    </div> -->
+                        </div>
+                      </section>
 
-                    
-                  </div>
+                      <!-- FIN CARD CARRITO -->
 
-              </section>
-                      
+                      <hr class="my-4" />
 
-                      
-    <!-- FIN CARD CARRITO -->
-
-                      <hr class="my-4">
-    
                       <div class="pt-5">
-                        <h6 class="mb-0"><a href="#!" class="text-body">
-                          <i
-                              class="fas fa-long-arrow-alt-left me-2"></i>Quitar todo</a></h6>
+                        <h6 class="mb-0">
+                          <button id="btn-remove-all" href="#!" class="text-body btn-remove-all">
+                            <i  class="fas btn-remove-all fa-long-arrow-alt-left me-2"></i
+                            >Quitar todo</
+                          >
+                        </h6>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 bg-grey">
                     <div class="p-5">
-                     
                       <h3 class="fw-bold mb-5 mt-2 pt-1">Resumen</h3>
                       <div class="d-flex justify-content-between mb-5">
                         <h5 class="text-uppercase">Precio total</h5>
-                        <h5 class="cart-total-price">$183.96</h5>
+                        <h5 class="cart-total-price">$0</h5>
                       </div>
-    
-                      <button type="button" class="btn btn-dark btn-block btn-lg"
-                        data-mdb-ripple-color="dark">COMPRAR</button>
-    
+
+                      <button id="btn-purchase"
+                        type="button"
+                        class="btn btn-dark btn-purchase btn-block btn-lg"
+                        data-mdb-ripple-color="dark"
+                      >
+                        COMPRAR
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -140,24 +184,29 @@
       </div>
     </section>
 
-
-    
     <footer class="pie-pagina bg-dark">
       <div class="grupo-1">
         <div class="box">
           <figure>
             <a href="#">
-              <img src="../assets/img/perro-logo-blancoo.png" alt="Logo de SLee Dw" height="150" style="width:100% ;">
+              <img
+                src="../assets/img/perro-logo-blancoo.png"
+                alt="Logo de SLee Dw"
+                height="150"
+                style="width: 100%"
+              />
             </a>
           </figure>
         </div>
         <div class="box">
           <h2>Nosotros</h2>
-          <p>Somos una compania que provee alegria y felicidad para tus mascotas.</p>
+          <p>
+            Somos una compania que provee alegria y felicidad para tus mascotas.
+          </p>
           <p>Todo lo que tu mejor amigo necesita, esta aqui!</p>
           <p>Direccion: Río de Janeiro 300 (Caballito).</p>
         </div>
-  
+
         <div class="box">
           <h2>Siguenos!</h2>
           <div class="red-social">
@@ -169,11 +218,23 @@
         </div>
       </div>
       <div class="grupo-2 bg-dark text-light">
-        <small>&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos Reservados.</small>
+        <small
+          >&copy; 2022 <b>PET SHOP MINDY</b> - Todos los Derechos
+          Reservados.</small
+        >
       </div>
     </footer>
+    <script
+    src="https://kit.fontawesome.com/eb496ab1a0.js"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/carrito.js"></script>
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
   </body>
 </html>
